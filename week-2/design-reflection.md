@@ -1,7 +1,6 @@
 ## Site Map Image
 
-
-
+[Screen shot link](https://raw.githubusercontent.com/kurtschlueter/phase-0/master/week-2/images/IMG_0418.JPG)
 
 ## What are the 6 Phases of Web Design?
 
