@@ -11,7 +11,8 @@ as you wanted it?
 
   1. <div> creates a new line in text so we used <span> to style certain letters in a word.
   2. We used text-align: center to center the text in the middle of the page.
-  3. We used border-collapse and border-spacing to get the links to space out like they do. To be honest, we wanted to use padding but couldn't get it to work.
+  3. We used border-collapse and border-spacing to get the links to space out like they
+  do. To be honest, we wanted to use padding but couldn't get it to work.
 
 What CSS did you use to modify the element style (like size, color, etc.)
 Did you modify the HTML to include classes or ids? If so, which did you choose and why?
