@@ -1,0 +1,73 @@
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+  Let's start off with the syntax: <link type="text/css" rel="stylesheet" href="#">
+  The type attribute specifies the file type, the rel attributes specifies the relationship between the current document and linked file, and the href attribute is the link. This link tag is a child of the head tag.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+  1. <div> creates a new line in text so we used <span> to style certain letters in a word.
+  2. We used text-align: center to center the text in the middle of the page.
+  3. We used border-collapse and border-spacing to get the links to space out like they do. To be honest, we wanted to use padding but couldn't get it to work.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+  You can look at the code below to see what we used specifically. Yes we did use id's and classes. We used classes when we wanted to format more than one tag. We used id's when we wanted to format only one tag. I could see myself doing away with id's in the future.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+  Our code was a lot cleaner. It looked like the actual site had most of the styling done in the html. I understand why it is best to keep the styling in CSS and actually prefer to do it this way. Having to look at that clutter can get in the way of following the structure of a page. The Berkshire homepage was simple enough that looking through the html with styling included was not a big ordeal. The more complicated the site, the more apparent the value of separating the styling from the structure will become.
+
+  They also used display:block and margin for positioning purposes. We left the display property with it's default value: inline. This is something to think about in the future.
+*/
+
+* {
+  color: #000080;
+  background-color: #ffffff;
+}
+a {
+  color: #800080;
+}
+a: visited {
+  color: #ff0000;
+}
+h1 {
+  text-align: center;
+  font-size: 18px;
+}
+#address {
+  text-align: center;
+  font-size: 13px;
+}
+#offhom {
+  font-size: 16px;
+}
+.impletter {
+  font-size: 36px;
+}
+.lessletter {
+  font-size: 15px;
+}
+.line {
+  width: 100%;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #d3d3d3;
+}
+.subtext {
+  font-size: .5em;
+}
+#insurance {
+  text-align: center;
+  font-size: .65em;
+}
+#comments {
+  font-size: .82em;
+}
+footer {
+  font-size: .6em;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 2em;
+}
