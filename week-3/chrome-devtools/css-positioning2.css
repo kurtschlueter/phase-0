@@ -1,0 +1,269 @@
+/*Note: There are three different ways to add background colors here.
+You can add them using a name (for common names), Hex, or RGB values.
+*/
+
+body {
+  background-color: gray;
+
+  /*Exercise 4*/
+  /*margin-top: 5em;*/
+
+
+}
+
+#div-1 {
+  /*Exercise 1*/
+  border: 1px solid black;
+  background-color: purple;
+  position: static;
+  margin-bottom: 200px;
+
+  /*Exercise 2*/
+/*  border: 1px solid black;
+  background-color: purple;
+  position: static;*/
+
+  /*Exercise 3*/
+/*  display: inline-block;
+  border: 1px solid black;
+  background-color: purple;
+  position: static;
+  margin-bottom: 200px;*/
+
+  /*Exercise 4*/
+/*  display: inline;
+  border: 1px solid black;
+  background-color: purple;
+  position: static;
+  margin: 5em;*/
+
+  /*Exercise 5*/
+/*  border: 1px solid black;
+  background-color: purple;
+  position: static;
+  margin-bottom: 200px;
+  width: 5em;
+  height: 5em;*/
+
+  /*Exercise 6*/
+/*  border: 1px solid black;
+  background-color: purple;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;*/
+
+  /*Exercise 7*/
+/*  border: 1px solid black;
+  background-color: purple;
+  position: static;
+  margin-bottom: 200px;*/
+
+  /*Exercise 8*/
+/*  border: 1px solid black;
+  background-color: purple;
+  position: static;
+  margin-bottom: 200px;*/
+
+  /*Exercise 9*/
+
+}
+#div-2 {
+  /*Exercise 1*/
+  background-color: #09CDA1;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+
+  /*Exercise 2*/
+/*  background-color: #09CDA1;
+  position: static;
+  top: 0px;
+  left: 50px;
+  width: 200px;
+  height: 200px;*/
+
+  /*Exercise 3*/
+/*  display: inline-block;
+  background-color: #09CDA1;
+  position: static;
+  top: 0px;
+  left: 50px;
+  width: 200px;
+  height: 200px;*/
+
+  /*Exercise 4*/
+/*  display: inline;
+  background-color: #09CDA1;
+  position: static;
+  margin: 5em;*/
+
+  /*Exercise 5*/
+/*  background-color: #09CDA1;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  width: 5em;
+  height: 5em;*/
+
+  /*Exercise 6*/
+/*  background-color: #09CDA1;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  width: 200px;
+  height: 200px;*/
+
+  /*Exercise 7*/
+/*  background-color: #09CDA1;
+  position: fixed;
+  top: 0px;
+  left: 25%;
+  width: 50%;
+  height: 5em;*/
+
+  /*Exercise 8*/
+/*  background-color: #09CDA1;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  width: 200px;
+  height: 200px;*/
+
+  /*Exercise 9*/
+
+}
+#div-3 {
+  /*Exercise 1*/
+  background-color: #69D2E7;
+  position: absolute;
+  top: 240px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+
+  /*Exercise 2*/
+/*  background-color: #69D2E7;
+  position: static;
+  top: 240px;
+  left: 30px;
+  width: 100px;
+  height: 100px;*/
+
+  /*Exercise 3*/
+/*  display: inline-block;
+  background-color: #69D2E7;
+  position: static;
+  top: 240px;
+  left: 30px;
+  width: 100px;
+  height: 100px;*/
+
+  /*Exercise 4*/
+/*  display: inline;
+  background-color: #69D2E7;
+  position: static;
+  margin: 5em;*/
+
+  /*Exercise 5*/
+/*  background-color: #69D2E7;
+  position: absolute;
+  top: 240px;
+  left: 30px;
+  width: 5em;
+  height: 5em;*/
+
+  /*Exercise 6*/
+/*  background-color: #69D2E7;
+  position: absolute;
+  top: 240px;
+  left: 30px;
+  width: 100px;
+  height: 100px;*/
+
+  /*Exercise 7*/
+/*  background-color: #69D2E7;
+  position: absolute;
+  top: 240px;
+  left: 30px;
+  width: 100px;
+  height: 100px;*/
+
+  /*Exercise 8*/
+/*  background-color: #69D2E7;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 15%;
+  height: 100%;*/
+
+  /*Exercise 9*/
+}
+#div-4 {
+  /*Exercise 1*/
+  background-color: rgb(205,163,205);
+  width: 300px;
+  position: fixed;
+  top: 100px;
+  left: 200px;
+  height: 100px;
+
+  /*Exercise 2*/
+/*  background-color: rgb(205,163,205);
+  width: 300px;
+  position: static;
+  top: 100px;
+  left: 200px;
+  height: 100px;*/
+
+  /*Exercise 3*/
+/*  display: inline-block;
+  background-color: rgb(205,163,205);
+  width: 300px;
+  position: static;
+  top: 100px;
+  left: 200px;
+  height: 100px;*/
+
+  /*Exercise 4*/
+/*  display: inline;
+  background-color: rgb(205,163,205);
+  position: static;
+  margin: 5em;*/
+
+  /*Exercise 5*/
+/*  background-color: rgb(205,163,205);
+  position: fixed;
+  top: 100px;
+  left: 200px;
+  height: 5em;
+  width: 5em;*/
+
+  /*Exercise 6*/
+/*  background-color: rgb(205,163,205);
+  width: 300px;
+  position: fixed;
+  top: 100px;
+  left: 200px;
+  height: 100px;*/
+
+  /*Exercise 7*/
+/*  background-color: rgb(205,163,205);
+  width: 300px;
+  position: fixed;
+  top: 100px;
+  left: 200px;
+  height: 100px;*/
+
+  /*Exercise 8*/
+/*  background-color: rgb(205,163,205);
+  width: 300px;
+  position: fixed;
+  top: 100px;
+  left: 200px;
+  height: 100px;*/
+
+  /*Exercise 9*/
+}
