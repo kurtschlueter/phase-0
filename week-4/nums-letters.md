@@ -65,8 +65,8 @@ This challenge was straight forward. I will continue to review further.
 
 ## Below are the three ruby files.
 
-[Exercise 1: Variables](https://raw.githubusercontent.com/kurtschlueter/phase-0/master/week-3/chrome-devtools/imgs/Exercise1.png)
+[Exercise 1: Variables](https://github.com/kurtschlueter/phase-0/blob/master/week-4/defining-variables.rb)
 
-[Exercise 2: Simple String Methods](https://raw.githubusercontent.com/kurtschlueter/phase-0/master/week-3/chrome-devtools/imgs/Exercise2.png)
+[Exercise 2: Simple String Methods](https://github.com/kurtschlueter/phase-0/blob/master/week-4/simple-string.rb)
 
-[Exercise 3: Local Variables and Basic Arithmetical Operations](https://raw.githubusercontent.com/kurtschlueter/phase-0/master/week-3/chrome-devtools/imgs/Exercise3.png)
+[Exercise 3: Local Variables and Basic Arithmetical Operations](https://github.com/kurtschlueter/phase-0/blob/master/week-4/basic-math.rb)
