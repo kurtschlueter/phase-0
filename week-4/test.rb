@@ -55,3 +55,12 @@ puts 'My name is ' + myName + ' and I am 26 years old.'
 var1 = 6 # var1 = 6 and var2 is nil
 var2 = var1 # var1 = 6 and var2 = 6
 var1 = 3 # var1 = 3 and var2 = 6
+
+# String Methods
+old_string = 'Ruby is cool'
+old_string_allcaps = old_string.upcase
+new_string = old_string_allcaps.reverse
+
+puts old_string
+puts old_string_allcaps
+puts new_string
