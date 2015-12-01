@@ -1,0 +1,33 @@
+body {background-color: #AACFD0;}
+
+header {background-color: white;
+text-align:center;
+}
+
+h2 {text-align: center;}
+article {margin-left: 20px;
+margin-right: 20px;
+}
+
+
+.column-1 {background-color: white;
+    display: inline-block;
+    float:left;
+    width: 46%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.column-2 {background-color: white;
+    display: inline-block;
+    float:right;
+    width: 46%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+footer {background-color: white;
+bottom: 0;
+clear:both;
+    text-align:center;
+}
