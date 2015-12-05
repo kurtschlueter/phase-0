@@ -170,3 +170,20 @@
       puts(Math.tan(Math::PI/4))
       puts(Math.log(Math::E**2))
       puts((1 + Math.sqrt(5))/2)
+
+
+
+
+      puts ' '
+
+      teststring = ''
+
+      puts teststring
+
+      testarray = ['a','b','c']
+
+      puts testarray[0]
+
+      sentenceadd = teststring + testarray[0]
+
+      puts sentenceadd

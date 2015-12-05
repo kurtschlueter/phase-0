@@ -4,3 +4,7 @@
 
 
 # Your Solution Below
+
+def welcome(string)
+
+end
