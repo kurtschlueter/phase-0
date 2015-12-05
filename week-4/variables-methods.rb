@@ -36,9 +36,10 @@ puts 'I am not sure why you would pick such a loser number like ' + favoriteNum 
 puts 'I am not suprised.'
 puts betterNum.to_s + ' is one of a gazillion numbers that is better than ' + favoriteNum + '.'
 puts 'My name is BashBot and I am a complete ass.'
+puts ' '
 
 ## Links
-
+[Exercise 1: Variables](https://github.com/kurtschlueter/phase-0/blob/master/week-4/defining-variables.rb)
   puts 'https://github.com/kurtschlueter/phase-0/blob/master/week-4/address/my_solution.rb'
 
   puts 'https://github.com/kurtschlueter/phase-0/blob/master/week-4/math/my_solution.rb'
