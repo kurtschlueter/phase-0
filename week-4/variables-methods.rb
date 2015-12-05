@@ -37,7 +37,7 @@ puts 'I am not suprised.'
 puts betterNum.to_s + ' is one of a gazillion numbers that is better than ' + favoriteNum + '.'
 puts 'My name is BashBot and I am a complete ass.'
 
-  # Links
+## Links
 
   puts 'https://github.com/kurtschlueter/phase-0/blob/master/week-4/address/my_solution.rb'
 
@@ -45,7 +45,6 @@ puts 'My name is BashBot and I am a complete ass.'
 
   puts 'https://github.com/kurtschlueter/phase-0/blob/master/errors.rb'
 
-<a href="#">hello</a>
 ## How do you define a local variable?
 
   # A variable is a place to store data. A local variable is a variable that exists only in the block of code that it was created (scope). They have to be created (initialized) in order to be used because they do not default to nil like global variables.
