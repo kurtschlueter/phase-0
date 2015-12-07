@@ -187,3 +187,16 @@
       sentenceadd = teststring + testarray[0]
 
       puts sentenceadd
+
+
+      var1= 1
+      var2 = var1 + 1
+      puts ''
+      puts 'var1 = ' + var1
+      puts 'var2 = ' + var2
+      puts''
+
+      # :var3 = 1
+      # :var4 = :var3 + 1
+      # puts ':var3 = ' + :var3
+      # puts ':var4 = ' + :var4
