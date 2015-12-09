@@ -1,78 +1,75 @@
 # Pad an Array
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [with: Eddie Glenn]
 
-# I spent [] hours on this challenge.
-
-
-# Complete each step below according to the challenge directions and
-# include it in this file. Also make sure everything that isn't code
-# is commented in the file.
-
-
+# I spent [1] hour on this challenge.
 
 # 0. Pseudocode
 
-# What is the input?
-# What is the output? (i.e. What should the code return?)
-# What are the steps needed to solve the problem?
+# Input is an array, a minimum size, and a padding value
+# Output will be an array
+# if length of array equals or is bigger than minimum size then we can just send the original array to the output.
+# if the length of array is less than minimum size then we have pad the difference with value
 
 
 # 1. Initial Solution
-def pad!(array, min_size, value = nil) #destructive
-  if array.length >= min_size.to_i
-    # puts 'entered length greater than or equal to min'
-    # puts arrayNew.inspect
-    return array
-  elsif min_size.to_i > array.length
-    # puts 'entered length less than min'
-    for x in (array.length)..(min_size.to_i - 1)
-      # puts 'entered for loop'
-      array[x] = value
-
-      # puts array[x]
-    end
-    return array
-    # puts arrayNew.inspect
-  end
-end
 
 def pad(array, min_size, value = nil) #non-destructive
-  arrayNew = array.dup
-  if arrayNew.length >= min_size.to_i
-    # puts 'entered length greater than or equal to min'
-    # puts arrayNew.inspect
-    return arrayNew
-  elsif min_size.to_i > arrayNew.length
-    # puts 'entered length less than min'
-    for x in (arrayNew.length)..(min_size.to_i - 1)
-      # puts 'entered for loop'
-      arrayNew[x] = value
-      # puts array[x]
+  arrayCopy = array.dup
+
+  if arrayCopy.length >= min_size
+    return arrayCopy
+
+  else
+    while arrayCopy.length < min_size
+      arrayCopy[arrayCopy.length] = value
+      # p arrayCopy
     end
-    # puts arrayNew.inspect
-    return arrayNew
+    return arrayCopy
   end
 end
-# pad([])
-# pad([1,2,3], 0)
-# pad([1,2,3], 5)
-# array = [1,2,3]
-# puts ' '
-# p array
-# puts ' '
-# p pad(array, 5,2)
-# p array
-# puts ' '
-# p pad(array,7,'apple')
-# p array
 
-# pad(['a','b','c',],3,'apple')
-# pad(['a','b','c',],2,'apple')
-# pad(['a','b','c',],0,'apple')
+
+def pad!(array, min_size, value = nil) #destructive
+  if array.length >= min_size.to_i
+    return array
+
+  elsif min_size.to_i > array.length
+    for x in (array.length)..(min_size.to_i - 1)
+      array[x] = value
+    end
+    return array
+  end
+end
 
 # 3. Refactored Solution
 
-
+# It looks fine the way it is.
 
 # 4. Reflection
+
+# Were you successful in breaking the problem down into small steps?
+
+  # Yes. It is a simple if else statement with a loop in one.
+
+# Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+
+  # Yes. We have seen all of this syntax before. We breezed through it.
+
+
+# Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+
+  # No. We were sloppy. We forgot to insert pad values to the padded array and we also put the return in the while loop so it quit after one 1 iteration. These were quick fixes though.
+
+# When you refactored, did you find any existing methods in Ruby to clean up your code?
+
+  # No refactoring done.
+
+# How readable is your solution? Did you and your pair choose descriptive variable names?
+
+  # It is pretty readable because it's simple. Our naming choices are fine.
+
+# What is the difference between destructive and non-destructive methods in your own words?
+
+  # Destructive changes the value of the input selected for return. Non-destructive returns a copy or new output.
+
