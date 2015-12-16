@@ -192,11 +192,45 @@
       var1= 1
       var2 = var1 + 1
       puts ''
-      puts 'var1 = ' + var1
-      puts 'var2 = ' + var2
+      puts 'var1 = ' + var1.to_s
+      puts 'var2 = ' + var2.to_s
       puts''
 
       # :var3 = 1
       # :var4 = :var3 + 1
       # puts ':var3 = ' + :var3
       # puts ':var4 = ' + :var4
+
+restaurant_menu = {
+  "Ramen" => 3,
+  "Dal Makhani" => 4,
+  "Tea" => 2
+}
+
+puts restaurant_menu['Ramen']
+restaurant_menu["Ramen"] = 4
+puts restaurant_menu['Ramen']
+
+
+restaurant_menu2 = {
+  :Ramen => 3,
+  :DalMakhani => 4,
+  :Tea => 2
+}
+
+puts restaurant_menu2[:Ramen]
+restaurant_menu2[:Ramen] = 4
+puts restaurant_menu2[:Ramen]
+
+def pl(list)
+  list.each do|item|
+  puts item
+  end
+end
+pl([1,2,3])
+
+array =['a','b','c']
+array2 = array + Array.new(2, 'apple')
+
+puts array.inspect
+puts array2.inspect
