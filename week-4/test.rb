@@ -234,3 +234,12 @@ array2 = array + Array.new(2, 'apple')
 
 puts array.inspect
 puts array2.inspect
+
+    board = Array.new(5){Array.new(5)}
+    xx = 0
+    for x in 0..4
+      for y in 0..4
+        board[x][y] = xx
+        xx=xx+1
+      end
+    end

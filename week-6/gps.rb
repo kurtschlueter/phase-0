@@ -1,42 +1,59 @@
 # Your Names
-# 1)
-# 2)
+# 1) Meagan Munch
+# 2) Kurt Schlueter
 
-# We spent [#] hours on this challenge.
+# We spent [1] hours on this challenge.
+
+
+# 1. Understand the code
+# 2. Readability
+# 3. Logic
 
 # Bakery Serving Size portion calculator.
+# Create serving size method
+def ingredients_calc(item_to_make, available_ingredients)
 
-def serving_size_calc(item_to_make, num_of_ingredients)
-  library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
-  error_counter = 3
+  # Initializing variables
+  # The key value pairs in the library are items you can make in this bakery
+  # These are the foods that the bakery can make, and how many ingredirents are needed to make each item.
 
-  library.each do |food|
-    if library[food] != library[item_to_make]
-      error_counter += -1
-    end
-  end
+  # library is the _________
 
-  if error_counter > 0
+  ingredients_count = {"cookie" => 1, "cake" =>  5, "pie" => 7}
+
+  # Raises error if item_to_make does not exist in library
+  unless ingredients_count.has_key?(item_to_make)
     raise ArgumentError.new("#{item_to_make} is not a valid input")
   end
 
-  serving_size = library.values_at(item_to_make)[0]
-  remaining_ingredients = num_of_ingredients % serving_size
+  # This calculates the remaining ingredients
+  ingredients_needed = ingredients_count[item_to_make]
+  remaining_ingredients = available_ingredients % ingredients_needed
 
-  case remaining_ingredients
-  when 0
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}"
-  else
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+  # Returns values for left over ingredients if there are any
+  # if remaining_ingredients == 0
+  #   return "Calculations complete: Make #{available_ingredients / ingredients_needed} #{item_to_make}(s)"
+  # else
+  #   # If there ARE leftovers, say how many (BONUS: and a suggested item)
+  #   return "Calculations complete: Make #{available_ingredients / ingredients_needed} #{item_to_make}(s), you have #{remaining_ingredients} leftover ingredient(s). Bake #{remaining_ingredients} cookie(s) to use up remaining ingredients."
+  # end
+
+  return_string = "Calculations complete: Make #{available_ingredients / ingredients_needed} #{item_to_make}(s)."
+
+  if remaining_ingredients > 0
+      return_string += " You have #{remaining_ingredients} leftover ingredient(s). Bake #{remaining_ingredients} cookie(s) to use up remaining ingredients."
   end
+
+  return return_string
+
 end
 
-p serving_size_calc("pie", 7)
-p serving_size_calc("pie", 8)
-p serving_size_calc("cake", 5)
-p serving_size_calc("cake", 7)
-p serving_size_calc("cookie", 1)
-p serving_size_calc("cookie", 10)
-p serving_size_calc("THIS IS AN ERROR", 5)
+p ingredients_calc("pie", 7)
+p ingredients_calc("pie", 8)
+p ingredients_calc("cake", 5)
+p ingredients_calc("cake", 7)
+p ingredients_calc("cookie", 1)
+p ingredients_calc("cookie", 10)
+# p ingredients_calc("apples", 5)
 
 #  Reflection
