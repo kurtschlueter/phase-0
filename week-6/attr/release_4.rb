@@ -11,43 +11,28 @@ class Profile
     @name = "Kim"
     @occupation = "Cartographer"
   end
-
-  def print_info
-    puts
-    puts "age: #{@age}"
-    puts
-    puts "name: #{@name}"
-    puts
-    puts "occupation: #{@occupation}"
-    puts
-  end
 end
 
 instance_of_profile = Profile.new
-puts "--- printing age -----"
-sleep 0.8
+
 p instance_of_profile.age
-
-puts "--- printing name ----"
-sleep 0.8
 p instance_of_profile.name
-
-puts "--- printing occupation ----"
-sleep 0.8
 p instance_of_profile.occupation
-
-puts "--- changing profile information ----"
-10.times do
-  print "."
-  sleep 0.1
-end
 
 instance_of_profile.age = 28
 instance_of_profile.name = "Taylor"
 instance_of_profile.occupation = "Rare Coins Trader"
 
+p instance_of_profile.age
+p instance_of_profile.name
+p instance_of_profile.occupation
 
-puts
-puts "---- printing all profile info -----"
-sleep 0.8
-instance_of_profile.print_info
+t = [[‘x','x','x'],['y','y',''],['z','z','z']]
+
+t.each do |row|
+  row.each do |cell|
+    if cell == ""
+      cell = "X"
+    end
+  end
+end
