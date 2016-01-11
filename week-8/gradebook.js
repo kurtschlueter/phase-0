@@ -1,7 +1,9 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+
+I worked on this challenge [by myself, with: LeeAnne Hawley]
+This challenge took me [2] hours.
+
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -18,54 +20,79 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
-var gradebook = {};
-for (x=0; x<students.length; x++) {
-  gradebook[students[x]] = {};
-  gradebook[students[x]].testScores = scores[x];
-}
+// var gradebook = {};
+// for (x=0; x<students.length; x++) {
+//   gradebook[students[x]] = {};
+//   gradebook[students[x]].testScores = scores[x];
+// }
 
-function addScore(name, score) {
-  gradebook[name].testScores.push(score);
-}
+// function addScore(name, score) {
+//   gradebook[name].testScores.push(score);
+// }
 
-gradebook.addScore = addScore;
+// gradebook.addScore = addScore;
 
-function getAverage(name) {
-  var avgOutput = average(gradebook[name].testScores);
-  return avgOutput;
-}
+// function getAverage(name) {
+//   var avgOutput = average(gradebook[name].testScores);
+//   return avgOutput;
+// }
 
-gradebook.getAverage = getAverage;
+// gradebook.getAverage = getAverage;
 
-function average(arrayInt){
-  var total = 0;
-  for(x=0; x<=(arrayInt.length - 1); x++) {
-    total = total + arrayInt[x];
-  }
-  avgOutput = total/(arrayInt.length);
-  return avgOutput;
-}
+// function average(arrayInt){
+//   var total = 0;
+//   for(x=0; x<=(arrayInt.length - 1); x++) {
+//     total = total + arrayInt[x];
+//   }
+//   avgOutput = total/(arrayInt.length);
+//   return avgOutput;
+// }
 
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {};
 
+for (var x = 0; x < students.length; x++) {
+  gradebook[students[x]] = {};
+  gradebook[students[x]].testScores = scores[x];
+};
 
+ var addScore = function(name, score) {
+   gradebook[name].testScores.push(score);
+ }
 
+gradebook.addScore = addScore;
 
+var getAverage = function(name){
+ return average(gradebook[name].testScores)
+}
 
+gradebook.getAverage = getAverage;
 
+var average = function (arrayInt) {
+  var totalSum = 0;
+  for(var y = 0; y < arrayInt.length; y++) {
+    totalSum = totalSum + arrayInt[y]
+  }
+  return totalSum/arrayInt.length;
+}
 
 // __________________________________________
 // Reflect
 
 
+// What did you learn about adding functions to objects?
 
+// Well... I guess I learned how to do it in the first place. Pretty simple
 
+// How did you iterate over nested arrays in JavaScript?
 
+  // for loop is how we did it. Maybe there are other ways as well.
 
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 
-
+  // We kept it pretty basic.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
