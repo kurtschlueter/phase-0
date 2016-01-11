@@ -20,7 +20,7 @@ select regions.region_name, states.state_name FROM regions INNER JOIN states ON 
 # Release 6
 
 Here is my schema design. Pretty simple.
-![Image of Schema](https://octodex.github.com/images/yaktocat.png)
+![Image of Schema](https://raw.githubusercontent.com/kurtschlueter/phase-0/master/week-8/database_intro/schemaTest.png)
 
 # Release 7
 
